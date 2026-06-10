@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hyundam Park — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#">HP</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-layout">
+      <div class="hero-inner">
+        <p class="hero-tag">Energy Engineering &middot; AI &middot; Materials Science</p>
+        <h1 class="hero-name">Hyundam<br>Park</h1>
+        <p class="hero-sub">Undergraduate researcher bridging computational chemistry, AI-driven data analysis, and energy materials at <strong>KENTECH</strong>.</p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">4.15</span>
+            <span class="stat-label">GPA / 4.3</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Conference Publications</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Research Positions</span>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="#research" class="btn-primary">View Research</a>
+          <a href="#contact" class="btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-photo" aria-hidden="true">
+        <div class="deco-ring"></div>
+        <div class="deco-ring"></div>
+        <div class="deco-ring"></div>
+        <img src="photo.jpg" alt="Hyundam Park" class="profile-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-text reveal">
+        <h2>Researcher. Leader.<br>Builder.</h2>
+        <p>I am an undergraduate student at the Korea Institute of Energy Technology (KENTECH), majoring in Energy Engineering. My academic interests span nanocrystal synthesis, AI-driven energy forecasting, and computational approaches to materials science.</p>
+        <p>Beyond research, I served as Student Council President, representing the undergraduate body in meetings with university leadership, lawmakers, governors, and reporters. I am also a Junior Member of the Young Engineers Honors Society (YEHS) of the National Academy of Engineering of Korea (NAEK).</p>
+      </div>
+      <div class="about-edu reveal">
+        <h3>Education</h3>
+        <div class="edu-item">
+          <span class="edu-date">2022–2028 (expected)</span>
+          <span class="edu-inst">Korea Institute of Energy Technology (KENTECH)</span>
+          <span class="edu-detail">B.Eng. Energy Engineering &middot; GPA 4.15 / 4.3</span>
+        </div>
+        <div class="edu-item">
+          <span class="edu-date">Dec 2025–Jan 2026</span>
+          <span class="edu-inst">Seoul National University (SNU)</span>
+          <span class="edu-detail">Domestic Credit Transfer &middot; COSS for Next-Gen Semiconductors</span>
+        </div>
+        <div class="edu-item">
+          <span class="edu-date">Jun–Aug 2023</span>
+          <span class="edu-inst">UC Berkeley</span>
+          <span class="edu-detail">International Visiting Student &middot; Chemistry &amp; Social Science</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <div class="container">
+      <p class="section-label">02 — Research</p>
+      <h2>Research Experience</h2>
+      <p class="section-intro">Exploring the intersection of materials science, AI, and energy engineering through hands-on laboratory work and data-driven analysis.</p>
+      <div class="research-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="materials">Materials</button>
+        <button class="filter-btn" data-filter="ai">AI / Data</button>
+        <button class="filter-btn" data-filter="education">Education</button>
+      </div>
+      <div class="research-grid" id="researchGrid">
+
+        <div class="research-card reveal" data-category="materials">
+          <div class="card-header">
+            <span class="card-period">Jul 2022 – Oct 2023</span>
+            <span class="skill-tag tag-materials">Materials</span>
+          </div>
+          <h3 class="card-title">Cu Nanocrystal Synthesis</h3>
+          <p class="card-org">Oh Group &middot; KENTECH</p>
+          <p class="card-desc">Electrodeposition-based Cu nanocrystal synthesis for catalytic applications. Investigated colloidal epitaxy and deposition to tailor interfaces, defects, and porosity in self-assembled nanocrystal systems.</p>
+          <div class="card-badge">🏆 Best Poster Award, KENTECH Annual Research Fair 2023</div>
+        </div>
+
+        <div class="research-card reveal" data-category="ai">
+          <div class="card-header">
+            <span class="card-period">2025 – 2026</span>
+            <span class="skill-tag tag-ai">AI / Data</span>
+          </div>
+          <h3 class="card-title">Solar &amp; Wind Power Forecasting</h3>
+          <p class="card-org">JCCI 2026 &middot; Jeju Study</p>
+          <p class="card-desc">Performance analysis of solar and wind power forecasting in Jeju under seasonal feature selection strategies.</p>
+        </div>
+
+        <div class="research-card reveal" data-category="materials">
+          <div class="card-header">
+            <span class="card-period">Sep 2022</span>
+            <span class="skill-tag tag-materials">Materials</span>
+          </div>
+          <h3 class="card-title">TEM Analysis of Nanocrystal Grain Boundaries</h3>
+          <p class="card-org">MRS Spring 2023 &middot; San Francisco</p>
+          <p class="card-desc">Investigation of well-defined structure and grain boundaries on nanocrystals using atomic resolution TEM.</p>
+        </div>
+
+        <div class="research-card reveal" data-category="education">
+          <div class="card-header">
+            <span class="card-period">Sep 2022</span>
+            <span class="skill-tag tag-edu">Education</span>
+          </div>
+          <h3 class="card-title">RC Education Research</h3>
+          <p class="card-org">RC Education Center &middot; KENTECH</p>
+          <p class="card-desc">Research to Enable Residential College Education — integrating research culture into residential college life.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <p class="section-label">03 — Experience</p>
+      <h2>Leadership &amp; Service</h2>
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">Sep 2025 – Jun 2026</span>
+            <h3>Student Council President</h3>
+            <p class="tl-org">Korea Institute of Energy Technology (KENTECH)</p>
+            <p class="tl-desc">Managed projects and budget, directed 29 members. Represented undergraduates in meetings with university leadership, lawmakers, governors, and reporters.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">Oct 2023 – Jul 2025</span>
+            <h3>Air Force Sergeant — Base Entrance Control</h3>
+            <p class="tl-org">Republic of Korea Air Force &middot; 1st Fighter Wing, Military Police Squadron</p>
+            <p class="tl-desc">Honorably discharged.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">Nov 2022 – Jun 2023</span>
+            <h3>Education Innovation Panel</h3>
+            <p class="tl-org">KENTECH Education Innovation Center</p>
+            <p class="tl-desc">1st Learner Education Innovation Panel, sharing experiences toward innovative learning design.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">Nov 2022 – Jun 2023</span>
+            <h3>Student Council BPI Task Force</h3>
+            <p class="tl-org">KENTECH</p>
+            <p class="tl-desc">Work process improvement and organizational arrangement.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">Jun – Dec 2022</span>
+            <h3>Middle School Education Volunteer</h3>
+            <p class="tl-org">KENTECH RC Education Center</p>
+            <p class="tl-desc">Planned and operated Energy Class for middle school students.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">Mar – Dec 2022</span>
+            <h3>Founding Chairman, Central Election Commission</h3>
+            <p class="tl-org">KENTECH</p>
+            <p class="tl-desc">Established KENTECH's first undergraduate student government; conducted student elections as chair.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <div class="container">
+      <p class="section-label">04 — Publications</p>
+      <h2>Publications</h2>
+      <div class="pub-list">
+
+        <div class="pub-item reveal">
+          <div class="pub-meta">
+            <span class="pub-type">Conference Poster</span>
+            <span class="pub-year">2026</span>
+          </div>
+          <h3 class="pub-title">Performance Analysis of Solar and Wind Power Forecasting in Jeju under Seasonal Feature Selection Strategies</h3>
+          <p class="pub-authors">Minkyeul Lee, <strong>Hyundam Park</strong>, Yuri Bae, Bumshik Lee</p>
+          <p class="pub-venue">2026 JCCI Poster Session &middot; Yeosu-city, Jeollanam-do, South Korea</p>
+        </div>
+
+        <div class="pub-item reveal">
+          <div class="pub-meta">
+            <span class="pub-type">Conference Poster</span>
+            <span class="pub-year">2023</span>
+          </div>
+          <h3 class="pub-title">The Investigation of Well-Defined Structure and Grain Boundaries on Nanocrystals Using Atomic Resolution TEM</h3>
+          <p class="pub-authors">Seungkyu Kim, <strong>Hyundam Park</strong>, Jinsil Jang, Myoung Hwan Oh</p>
+          <p class="pub-venue">2023 MRS Spring Meeting &amp; Exhibit Poster Session &middot; San Francisco, California</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container skills-grid">
+      <div class="skills-col reveal">
+        <p class="section-label">05 — Skills &amp; Awards</p>
+        <h2>Technical Skills</h2>
+        <div class="skill-group">
+          <h4>Programming Languages</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">MATLAB</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Jupyter</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Tools &amp; Technologies</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">MS Office</span>
+            <span class="skill-tag">Adobe Photoshop</span>
+            <span class="skill-tag">Jitsi</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Research Areas</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Nanocrystal Synthesis</span>
+            <span class="skill-tag">TEM Analysis</span>
+            <span class="skill-tag">Electrodeposition</span>
+            <span class="skill-tag">AI Data Analysis</span>
+            <span class="skill-tag">Energy Forecasting</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Korean (Native)</span>
+            <span class="skill-tag">English (TOEFL 90 / TOEIC 905)</span>
+          </div>
+        </div>
+      </div>
+      <div class="awards-col reveal">
+        <h2>Awards &amp; Affiliations</h2>
+        <div class="award-item">
+          <span class="award-icon">🏆</span>
+          <div>
+            <strong>Best Poster Award</strong> — KENTECH Annual Research Fair, Cu Nanoparticle Catalyst Synthesis. Awarded by President of KENTECH (Dec 2023)
+          </div>
+        </div>
+        <div class="award-item">
+          <span class="award-icon">🎖️</span>
+          <div>
+            <strong>Mentorship Commendation</strong> — Outstanding voluntary mentoring of high school students. Mayor of Naju-si (Dec 2022)
+          </div>
+        </div>
+        <div class="award-item">
+          <span class="award-icon">🔬</span>
+          <div>
+            <strong>Junior Member, YEHS &middot; NAEK</strong> — Young Engineers Honors Society of the National Academy of Engineering of Korea. Since Sep 29, 2025
+          </div>
+        </div>
+        <div class="award-item">
+          <span class="award-icon">🩸</span>
+          <div>
+            <strong>13&times; Blood Donor</strong> — Korean Red Cross Blood Services (2019–2026)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <p class="section-label">06 — Contact</p>
+      <h2>Get in Touch</h2>
+      <p class="section-intro">I'm always open to research collaborations, academic discussions, and new opportunities. Feel free to reach out.</p>
+      <div class="contact-inner reveal">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span>✉</span>
+            <a href="mailto:eggfly14@kentech.ac.kr">eggfly14@kentech.ac.kr</a>
+          </div>
+          <div class="contact-item">
+            <span>📱</span>
+            <span>+82 10-9580-6369</span>
+          </div>
+          <div class="contact-item">
+            <span>📍</span>
+            <span>Naju-si, South Korea &middot; KENTECH</span>
+          </div>
+        </div>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your message…"></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+          <div id="formMsg"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <span>&copy; 2026 Hyundam Park</span>
+      <span>KENTECH &middot; Energy Engineering</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
