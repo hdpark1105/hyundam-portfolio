@@ -2,8 +2,8 @@
 
 A personal portfolio website for Hyundam Park, undergraduate researcher at the Korea Institute of Energy Technology (KENTECH), showcasing research, publications, leadership experience, and technical skills.
 
-**Live Site:** https://hyundampark.vercel.app  
-**GitHub:** https://github.com/hyundampark/portfolio
+**Live Site:** https://hyundam-portfolio.vercel.app  
+**GitHub:** https://github.com/hdpark1105/hyundam-portfolio
 
 ---
 
