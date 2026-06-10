@@ -117,16 +117,36 @@
       return;
     }
 
-    const submitBtn = form.querySelector('button[type="submit"]');
+    const submitBtn = form.querySelector(‘button[type="submit"]’);
     submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending…';
+    submitBtn.textContent = ‘Sending…’;
 
-    setTimeout(() => {
-      formMsg.textContent = 'Message sent! I’ll get back to you soon.';
-      formMsg.className = 'success';
-      form.reset();
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Send Message';
-    }, 900);
+    fetch(‘https://formspree.io/f/xjgdorlj’, {
+      method: ‘POST’,
+      headers: { ‘Content-Type’: ‘application/json’ },
+      body: JSON.stringify({
+        name: nameEl.value.trim(),
+        email: emailEl.value.trim(),
+        message: msgEl.value.trim()
+      })
+    })
+      .then(res => {
+        if (res.ok) {
+          formMsg.textContent = ‘Message sent! I\’ll get back to you soon.’;
+          formMsg.className = ‘success’;
+          form.reset();
+        } else {
+          formMsg.textContent = ‘Something went wrong. Please try again.’;
+          formMsg.className = ‘error’;
+        }
+      })
+      .catch(() => {
+        formMsg.textContent = ‘Network error. Please try again.’;
+        formMsg.className = ‘error’;
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = ‘Send Message’;
+      });
   });
 })();
