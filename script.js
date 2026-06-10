@@ -123,7 +123,10 @@
 
     fetch(‘https://formspree.io/f/xjgdorlj’, {
       method: ‘POST’,
-      headers: { ‘Content-Type’: ‘application/json’ },
+      headers: {
+        ‘Content-Type’: ‘application/json’,
+        ‘Accept’: ‘application/json’
+      },
       body: JSON.stringify({
         name: nameEl.value.trim(),
         email: emailEl.value.trim(),
